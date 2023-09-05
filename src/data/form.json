@@ -1,5 +1,19 @@
 {
-    "Data": "date",
-    "Nome": "text",
-    "produto": ["produto1", "produto2", "produto3"]
+  "Form": [{
+    "nome": "Data",
+    "tipo": "date",
+    "texto": ""
+    
+  },
+  {
+    "nome": "Nome",
+    "tipo": "text",
+    "texto": "Nome do cliente"
+  },
+  {
+    "nome": "Produto",
+    "tipo": "text",
+    "texto": ["produto1", "produto2", "produto3"]
+  }
+  ]
 }
