@@ -1,8 +1,23 @@
+:root {
+    --bkg-color: rgb(250, 250, 250);
+    --strips: rgb(0, 20, 0);
+    --mid-low: rgb(0, 50, 0);
+    --mid-high: rgb(120, 120, 120);
+    --text: rgb(5, 5, 5);
+    --text-strips: rgb(250, 250, 250);
+}
+
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     height: 60px;
     align-items: center;
     justify-content: center;
+    background-color: var(--strips);
+    color: var(--text-strips);
 }
 
 #nav {
@@ -22,16 +37,63 @@ header {
 
 main {
     text-align: center;
+    display: inline-block;
+}
+
+#latBar {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 19vw;
+    vertical-align: top;
+    height: calc(100vh - 60px);
+    z-index: -1;
+    background-color: var(--strips);
+    border-top: 2px solid var(--mid-low);
+    color: var(--text-strips);
+}
+
+#mainArea {
+    box-sizing: border-box;
+    display: inline-block;
+    height: calc(100vh - 120px);
+}
+
+form {
+    box-sizing: border-box;
+    display: flex;
+    width: 80vw;
+    height: 90%;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+form button {
+    margin-block: 20px;
+}
+
+.campo {
+    width: 250px;
+}
+
+.campo input, .campo select {
+    width: 150px;
+    border-radius: 3px;
+    border: 2px solid var(--mid-high);
 }
 
 footer {
     position: absolute;
     bottom: 0px;
+    left: 0px;
     align-items: center;
     display: inline-block;
     width: 100%;
+    height: 60px;
     vertical-align: middle;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 img {

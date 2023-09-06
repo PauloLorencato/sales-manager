@@ -1,5 +1,5 @@
 {
-  "Form": [{
+  "form": [{
     "nome": "Data",
     "tipo": "date",
     "texto": ""
