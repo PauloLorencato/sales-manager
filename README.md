@@ -28,19 +28,35 @@ Inicialmente, a interface será desenvolvida utilizando:
 ## Estrutura de arquivos
 
 sales-manager
+
     static
+
       data
+
         --JSON com dados da aplicação, como parâmetros configurados pelo administrador
+
       images
+
         --Ícones e imagens do front-end
+
       pages
+
         --Páginas HTMl da aplicação
+
       scripts
+
         --Scripts do front-end
+
       styles
+
         --Estilos de CSS
+
     config.json (configurações do servidor)
+
     filehandler.js (leitor de arqquivos, chamado no server.js)
+
     index.js (arquivo executável no nodejs, faz as chamadas iniciais aos módulos necessários)
+
     server.js (lógica de servidor, chamado no index.js)
+
     README.md
